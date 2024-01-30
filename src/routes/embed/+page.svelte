@@ -137,8 +137,6 @@
 
 <svelte:head>
 	<title>Kazwire - Search Freely Embeded</title>
-	<meta name="description" content="Search freely with Kazwire with an embed!" />
-	<meta property="og:description" content="Search freely with Kazwire with an embed!" />
 	<script src="/uv/uv.bundle.js" defer></script>
 	<script src="/uv/uv.config.js" defer></script>
 	<script src="/uv.js" defer></script>
@@ -218,28 +216,16 @@
 							</h1>
 							<!-- Play now button -->
 							<button class="lg:btn-xl btn mt-8" on:click={() => loadContent()}>
-								Start Now
+								Play Now
 								<Icon icon="carbon:play-filled" class="my-auto ml-1 inline-block" />
 							</button>
 						</div>
-						<p class="text-md z-40 mb-4 mt-auto text-center text-gray-200">
-							<!-- open link in new tab -->
-
-							{$_('pages.embed.made_in_partnership')}
-							<a class="hover:underline" target="_blank" href="https://kazwire.com">Kazwire.com</a>
-						</p>
+						
 					</div>
 				{:else if showLoadingScreen}
 					<div class="relative flex h-full items-center justify-center bg-primary transition-all">
 						<div class="absolute z-30 flex flex-col items-center justify-center gap-8">
 							<!-- Loading text -->
-							<h3 class="text-center text-2xl text-gray-100">
-								{$_('pages.embed.browse_for_free')} <a
-									class="hover:underline"
-									target="_blank"
-									href="https://kazwire.com">Kazwire.com</a
-								>!
-							</h3>
 							<div class="h-2.5 w-full min-w-[20rem] rounded-full bg-gray-100">
 								<div
 									class="h-2.5 rounded-full bg-secondary transition-all"
